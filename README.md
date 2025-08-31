@@ -67,3 +67,7 @@ export default tseslint.config([
   },
 ])
 ```
+
+
+admin@example.com
+Admin0!@#!@#!
