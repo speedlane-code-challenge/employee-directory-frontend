@@ -1,4 +1,3 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Amplify } from "aws-amplify";
 import { fetchAuthSession } from "aws-amplify/auth";
@@ -34,7 +33,7 @@ Amplify.configure(
     },
     API: {
       REST: {
-        DemoPod: {
+        EmployeeDirectory: {
           endpoint: VITE_ENDPOINT,
           region: VITE_REGION,
         },
@@ -52,8 +51,9 @@ Amplify.configure(
       REST: {
         headers: async () => {
           return {
-            Authorization:
-              (await fetchAuthSession())?.tokens?.accessToken?.toString() || "",
+            Authorization: `Bearer ${
+              (await fetchAuthSession())?.tokens?.accessToken?.toString() ?? ""
+            }`,
             env: VITE_ENV,
             region: VITE_REGION,
             account: VITE_ACCOUNT_ID,
@@ -65,13 +65,11 @@ Amplify.configure(
 );
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-        <GlobalAlert />
-      </ThemeProvider>
-    </Provider>
-  </StrictMode>
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+      <GlobalAlert />
+    </ThemeProvider>
+  </Provider>
 );
