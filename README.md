@@ -2,7 +2,7 @@
 
 A modern React-based employee directory application built with TypeScript, MUI, and AWS Amplify. This application provides comprehensive employee and department management with features like CRUD operations, image uploads, and advanced search capabilities.
 
-## 🚀 Features
+## Features
 
 - **Employee Management**: Complete CRUD operations for employee records
 - **Department Management**: Full department management system
@@ -13,7 +13,7 @@ A modern React-based employee directory application built with TypeScript, MUI, 
 - **State Management**: Redux Toolkit for efficient state management
 - **Authentication**: Protected routes with login system
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend Framework**: React 18 with TypeScript
 - **Build Tool**: Vite
@@ -26,7 +26,7 @@ A modern React-based employee directory application built with TypeScript, MUI, 
 - **Storage**: AWS S3 for image uploads
 - **Routing**: React Router DOM
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -68,7 +68,7 @@ src/
 └── index.css                  # Global styles
 ```
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -89,7 +89,7 @@ src/
    npm install
    ```
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Environment Setup
 
@@ -131,7 +131,7 @@ npm run build:prod
 npm run build:dev
 ```
 
-## 📋 API Endpoints
+## API Endpoints
 
 The application expects the following API endpoints:
 
@@ -156,7 +156,7 @@ The application expects the following API endpoints:
 }
 ```
 
-## 🔐 Authentication
+## Authentication
 
 The application includes a protected route system:
 - **Login**
