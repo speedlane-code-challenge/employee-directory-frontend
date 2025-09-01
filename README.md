@@ -159,6 +159,6 @@ The application expects the following API endpoints:
 ## 🔐 Authentication
 
 The application includes a protected route system:
-- **Login Credentials**: `admin@example.com` / `Admin0!@#!@#!`
-- **Protected Routes**: `/dashboard/*`
-- **Public Routes**: `/login`, `/`
+- **Login**
+- **Protected Routes**
+- **Public Routes**
